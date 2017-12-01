@@ -13,7 +13,7 @@ public class CfeExceptionMapper implements ExceptionMapper<CfeException>{
 
 	@Override
 	public Response toResponse(CfeException e) {
-		e.printStackTrace();
+	//	e.printStackTrace();
 		
 		HashMap<String, Object> jsonError = new HashMap<>();
 		jsonError.put("message", e.getMessage());
