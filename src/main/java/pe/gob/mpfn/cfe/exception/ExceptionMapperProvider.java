@@ -35,6 +35,6 @@ public class ExceptionMapperProvider implements ExceptionMapper<Exception>{
 		HashMap<String, Object> jsonError = new HashMap<>();
 		jsonError.put("message", e.getMessage());
 		jsonError.put("code", a.getStatusCode());
-		return Response.serverError().entity(jsonError).type(MediaType.APPLICATION_JSON).build();
+		return Response.status(a).entity(jsonError).type(MediaType.APPLICATION_JSON).build();
 	}
 }
