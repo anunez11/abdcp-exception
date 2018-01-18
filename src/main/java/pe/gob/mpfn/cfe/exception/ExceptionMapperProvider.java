@@ -21,17 +21,13 @@ public class ExceptionMapperProvider implements ExceptionMapper<Exception>{
 	
 	@Override
 	public Response toResponse(Exception e) {
-		//e.printStackTrace();
-		
+		e.printStackTrace();		
 		  StatusType a;
 		  if (e instanceof WebApplicationException) {	        	
 	            a=((WebApplicationException)e).getResponse().getStatusInfo();
 	        } else {	        	
 	            a= Response.Status.INTERNAL_SERVER_ERROR;
 	        }
-		
-		
-		
 		HashMap<String, Object> jsonError = new HashMap<>();
 		jsonError.put("message", e.getMessage());
 		jsonError.put("code", a.getStatusCode());
