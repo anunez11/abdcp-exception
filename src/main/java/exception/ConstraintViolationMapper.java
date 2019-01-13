@@ -1,4 +1,4 @@
-package pe.gob.mpfn.cfe.exception;
+package exception;
 
 import java.util.ArrayList;
 import java.util.HashMap;

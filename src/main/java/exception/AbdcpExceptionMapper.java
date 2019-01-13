@@ -1,4 +1,4 @@
-package pe.gob.mpfn.cfe.exception;
+package exception;
 
 import java.util.HashMap;
 
@@ -9,10 +9,10 @@ import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 @Provider
-public class CfeExceptionMapper implements ExceptionMapper<CfeException>{
+public class AbdcpExceptionMapper implements ExceptionMapper<AbdcpException>{
 
 	@Override
-	public Response toResponse(CfeException e) {
+	public Response toResponse(AbdcpException e) {
 	//	e.printStackTrace();
 		
 		HashMap<String, Object> jsonError = new HashMap<>();
