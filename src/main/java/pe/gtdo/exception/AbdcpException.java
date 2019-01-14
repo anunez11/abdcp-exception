@@ -1,6 +1,8 @@
-package exception;
+package pe.gtdo.exception;
+
 
 import javax.ws.rs.core.Response.Status;
+
 
 public class AbdcpException extends Exception {
 	private static final long serialVersionUID = 1L;

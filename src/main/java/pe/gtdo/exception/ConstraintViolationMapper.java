@@ -1,4 +1,4 @@
-package exception;
+package pe.gtdo.exception;
 
 import java.util.ArrayList;
 import java.util.HashMap;
